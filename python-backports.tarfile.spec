@@ -1,6 +1,6 @@
 Name:		python-backports.tarfile
 Version:	1.2.0
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/b/backports.tarfile/backports_tarfile-%{version}.tar.gz
 Summary:	Backport of CPython tarfile module
 URL:		https://pypi.org/project/backports.tarfile/

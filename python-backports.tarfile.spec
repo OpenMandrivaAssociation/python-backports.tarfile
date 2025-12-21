@@ -13,13 +13,19 @@ BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(setuptools-scm)
 BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  python%{pyver}dist(wheel)
-BuildSystem:	python
 BuildArch:	noarch
 
 %description
 Backport of CPython tarfile module
 
-%install -a
+%prep
+%autosetup -n backports_tarfile-%{version} -p1
+
+%build
+%py_build
+
+%install
+%py_install
 rm -rf %{buildroot}%{py_sitedir}/backports/__pycache__
 
 %files

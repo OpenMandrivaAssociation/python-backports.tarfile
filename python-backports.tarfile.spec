@@ -1,3 +1,5 @@
+%global _python_use_pep517 0
+
 Name:		python-backports.tarfile
 Version:	1.2.0
 Release:	2
@@ -8,7 +10,7 @@ License:	None
 Group:		Development/Python
 BuildRequires:	python
 BuildRequires:  python%{pyver}dist(setuptools)
-#BuildRequires:  python%{pyver}dist(pip)
+BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  python%{pyver}dist(wheel)
 BuildSystem:	python
 BuildArch:	noarch
